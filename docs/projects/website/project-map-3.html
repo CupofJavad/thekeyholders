@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Project Map 3 – TheKeyholders</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #0f0;
+      font-family: 'Courier New', Courier, monospace;
+      text-align: center;
+      padding: 20px;
+    }
+    img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      border: 2px solid #0f0;
+    }
+    .nav-links {
+      margin-top: 20px;
+    }
+    .nav-links a {
+      color: #0ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    button {
+      background-color: #0f0;
+      color: #000;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>PROJECT MAP: Final Zone</h1>
+
+  <img src="images/project-map-3.jpg" usemap="#map3" alt="Project Map Level 3">
+
+  <map name="map3">
+    <area shape="rect" coords="40,110,320,260" href="https://www.thekeyholders.org/projects/hyperlocal-ai" alt="Hyperlocal AI" title="Hyperlocal AI Tools">
+    <area shape="rect" coords="340,110,620,260" href="https://www.thekeyholders.org/projects/home-appraisal" alt="AI Home Appraisal Tool" title="AI Home Appraisal">
+    <area shape="rect" coords="40,280,320,430" href="https://www.thekeyholders.org/projects/decision-que" alt="Decision Que" title="Decentralized Governance">
+    <area shape="rect" coords="340,280,620,430" href="https://www.thekeyholders.org/projects/education-hub" alt="Education Hub" title="Education Hub (v2)">
+    <area shape="rect" coords="40,450,320,600" href="https://www.thekeyholders.org/projects/education-hub" alt="Education Hub" title="Education Hub (v3)">
+    <area shape="rect" coords="340,450,620,600" href="project-map-1.html" alt="Home" title="Back to Start">
+  </map>
+
+  <div class="nav-links">
+    <a href="index.html">🏠 Home</a>
+    <a href="project-map-2.html">⬅️ Previous</a>
+  </div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/audio/12-Pandora's Box.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button onclick="toggleAudio()">🔈 Mute/Unmute</button>
+
+  <script>
+    const audio = document.getElementById("bg-music");
+    function toggleAudio() {
+      audio.muted = !audio.muted;
+    }
+  </script>
+
+</body>
+</html>
