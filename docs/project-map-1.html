@@ -7,72 +7,30 @@
     body {
       background-color: #000;
       color: #0f0;
-      font-family: 'Courier New', Courier, monospace;
+      font-family: 'Courier New', monospace;
       text-align: center;
-      padding: 20px;
     }
     img {
       width: 100%;
       max-width: 1000px;
-      height: auto;
       border: 2px solid #0f0;
-    }
-    .nav-links {
-      margin-top: 20px;
-    }
-    .nav-links a {
-      color: #0ff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-    }
-    .nav-links a:hover {
-      color: #fff;
-    }
-    button {
-      background-color: #0f0;
-      color: #000;
-      border: none;
-      padding: 8px 16px;
-      cursor: pointer;
-      font-weight: bold;
-      margin-top: 15px;
     }
   </style>
 </head>
 <body>
+  <h1>PROJECT MAP 1</h1>
+  <img src="project-map-1.1.jpg" usemap="#image-map">
 
-  <h1>PROJECT MAP: Select Your Mission</h1>
-
-  <img src="images/project-map-1.jpg" usemap="#map1" alt="Project Map Level 1">
-
-  <map name="map1">
-    <area shape="rect" coords="55,120,275,245" href="sportsbook.html" alt="DAO-Powered Sportsbook" title="DAO-Powered Sportsbook">
-    <area shape="rect" coords="310,120,530,245" href="epicor-av.html" alt="Epicor AV Logistics Integration" title="Epicor AV Logistics Integration">
-    <area shape="rect" coords="565,120,785,245" href="comic-strips.html" alt="ADHD Comic Strips" title="ADHD Comic Strips">
-    <area shape="rect" coords="55,270,275,395" href="ai-movie-picker.html" alt="AI Movie Picker" title="AI Movie Picker">
-    <area shape="rect" coords="310,270,530,395" href="date-night-picker.html" alt="Date Night Picker" title="Date Night Picker">
-    <area shape="rect" coords="565,270,785,395" href="btc-b2b-payments.html" alt="BTC B2B Payment" title="BTC B2B Payment">
-    <area shape="rect" coords="840,500,980,580" href="project-map-2.html" alt="Next Map" title="Go to Next Map">
+  <map name="image-map">
+    <area target="_self" alt="bookie" title="bookie" href="dao-sportsbook.html" coords="29,422,282,589" shape="rect">
+    <area target="_self" alt="epicor" title="epicor" href="epicor-av-integration.html" coords="353,380,621,576" shape="rect">
+    <area target="_self" alt="comic dino" title="comic dino" href="adhd-comic-strips.html" coords="670,494,988,650" shape="rect">
+    <area target="_self" alt="movie picker" title="movie picker" href="ai-movie-picker.html" coords="36,888,301,1081" shape="rect">
+    <area target="_self" alt="date night help" title="date night help" href="date-night-picker.html" coords="361,870,655,1018" shape="rect">
+    <area target="_self" alt="trustless payments" title="trustless payments" href="btc-b2b-payments.html" coords="696,1054,985,1205" shape="rect">
+    <area target="_self" alt="date night help 2" title="date night help 2" href="date-night-picker.html" coords="45,1360,313,1489" shape="rect">
+    <area target="_self" alt="Next map" title="Next map" href="project-map-2.html" coords="844,1316,96" shape="circle">
+    <area target="_self" alt="home" title="home" href="index.html" coords="352,1209,669,1375" shape="rect">
   </map>
-
-  <div class="nav-links">
-    <a href="project-map-2.html">🧭 Next Map</a>
-    <a href="index.html">🏠 Home</a>
-  </div>
-
-  <audio id="bg-music" autoplay loop>
-    <source src="assets/audio/03-Zombie Panic.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-  <button onclick="toggleAudio()">🔈 Mute/Unmute</button>
-
-  <script>
-    const audio = document.getElementById("bg-music");
-    function toggleAudio() {
-      audio.muted = !audio.muted;
-    }
-  </script>
-
 </body>
 </html>
