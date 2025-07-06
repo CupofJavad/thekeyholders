@@ -2,107 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🎬 A.I. Movie Picker – Level Unlocked</title>
+  <title>Project Map 1 – TheKeyholders</title>
   <style>
     body {
       background-color: #000;
-      color: #00ff00;
+      color: #0f0;
       font-family: 'Courier New', Courier, monospace;
-      padding: 40px;
-      line-height: 1.6em;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1, h2 {
-      color: #0f0;
-      text-shadow: 2px 2px #000;
       text-align: center;
+      padding: 20px;
     }
-
-    .back-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      color: #0f0;
+    img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
       border: 2px solid #0f0;
-      text-decoration: none;
-      border-radius: 5px;
-      margin-top: 20px;
-      transition: 0.3s;
     }
-
-    .back-btn:hover {
+    .nav-links {
+      margin-top: 20px;
+    }
+    .nav-links a {
+      color: #0ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    .nav-links a:hover {
+      color: #fff;
+    }
+    button {
       background-color: #0f0;
       color: #000;
-    }
-
-    .glow-box {
-      background-color: #111;
-      border: 2px dashed #0f0;
-      padding: 20px;
-      margin-top: 30px;
-    }
-
-    .secret-label {
-      font-size: 0.85em;
-      color: #0ff;
-      margin-top: 5px;
-    }
-
-    .screenshot {
-      max-width: 100%;
-      border: 3px solid #0f0;
-      margin-top: 20px;
-    }
-
-    a {
-      color: #0ff;
-      text-decoration: underline;
-    }
-
-    a:hover {
-      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: 15px;
     }
   </style>
 </head>
 <body>
 
-  <h1>🎬 A.I. Movie Picker</h1>
-  <h2>“Love, Logic & Late Night Cinema”</h2>
+  <h1>PROJECT MAP: Select Your Mission</h1>
 
-  <div class="glow-box">
-    <p>
-      Deep beneath the layers of your streaming services... something lurks. An intelligence. A taste. A *vibe*.
-    </p>
-    <p>
-      Welcome to your new favorite weapon in the eternal battle of “What should we watch tonight?” – the <strong>A.I. Movie Picker</strong>. Whether you're watching solo, with your clone, or your apocalypse survival partner, this tool studies your preferences, your moods, and your previous picks to generate an eerily perfect movie suggestion.
-    </p>
-    <p>
-      It cross-references genres, tone, pacing, themes, visual style, and emotional resonance using a custom-trained model on thousands of personal reviews, Reddit threads, and known film nerd behavior. Then? It suggests one. Just one. And it's usually dead-on.
-    </p>
-    <p class="secret-label">🧪 Status: In Alpha. Secret prototype active.</p>
+  <img src="images/project-map-1.jpg" usemap="#map1" alt="Project Map Level 1">
+
+  <map name="map1">
+    <area shape="rect" coords="55,120,275,245" href="docs/sportsbook.html" alt="DAO-Powered Sportsbook" title="DAO-Powered Sportsbook">
+    <area shape="rect" coords="310,120,530,245" href="docs/epicor-av.html" alt="Epicor AV Logistics Integration" title="Epicor AV Logistics Integration">
+    <area shape="rect" coords="565,120,785,245" href="docs/comic-strips.html" alt="ADHD Comic Strips" title="ADHD Comic Strips">
+    <area shape="rect" coords="55,270,275,395" href="docs/ai-movie-picker.html" alt="AI Movie Picker" title="AI Movie Picker">
+    <area shape="rect" coords="310,270,530,395" href="docs/date-night-picker.html" alt="Date Night Picker" title="Date Night Picker">
+    <area shape="rect" coords="565,270,785,395" href="docs/btc-b2b-payments.html" alt="BTC B2B Payment" title="BTC B2B Payment">
+    <area shape="rect" coords="840,500,980,580" href="project-map-2.html" alt="Next Map" title="Go to Next Map">
+  </map>
+
+  <div class="nav-links">
+    <a href="project-map-2.html">🧭 Next Map</a>
+    <a href="index.html">🏠 Home</a>
   </div>
 
-  <h2>🕹️ Features</h2>
-  <ul>
-    <li>🧠 Context-aware suggestion engine (solo or couple mode)</li>
-    <li>🕵️ Personalized mystery picks based on your emotional intent</li>
-    <li>🎞️ Visual aesthetics filtering (e.g. “moody but cozy”)</li>
-    <li>💬 GPT-powered explanation: “Why this film?”</li>
-    <li>🔄 Retry for a wildcard surprise</li>
-  </ul>
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/audio/03-Zombie Panic.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <button onclick="toggleAudio()">🔈 Mute/Unmute</button>
 
-  <img src="docs/images/draft%20project%20map%201.jpg" alt="AI Movie Picker Concept Art" class="screenshot">
-
-  <div class="glow-box">
-    <p><strong>📍 Current Mission:</strong> Build v1.0 interface and connect to GPT-4 API + TMDB database.</p>
-    <p><strong>🎯 Goal:</strong> Release public beta in browser-based format by Q3.</p>
-    <p><strong>🔒 Bonus Objective:</strong> Design “Night Mode for Lovers” – choose a vibe, lock phones, and let the AI do the rest.</p>
-  </div>
-
-  <p>
-    🧭 Return to <a href="index.html" class="back-btn">Mission Control</a>
-  </p>
+  <script>
+    const audio = document.getElementById("bg-music");
+    function toggleAudio() {
+      audio.muted = !audio.muted;
+    }
+  </script>
 
 </body>
 </html>
