@@ -1,31 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>🏀 DAO-Powered Sportsbook</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DAO Sportsbook</title>
   <style>
     body {
-      background-color: #111;
-      color: #0f0;
+      margin: 0;
+      padding: 0;
+      background-color: black;
       font-family: 'Courier New', Courier, monospace;
-      text-align: center;
-      padding: 50px;
+      color: #39FF14;
+      background-image: url("images/dao-sportsbook-bg.jpg"); /* Add this to your repo */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
     }
-    a {
-      color: #0ff;
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 40px 20px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #00ff44;
+      text-shadow: 3px 3px 0 #000;
+      margin-bottom: 20px;
+    }
+
+    .description {
+      max-width: 700px;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border: 2px dashed #00ff88;
+      margin-bottom: 40px;
+    }
+
+    .button-link {
+      display: inline-block;
+      background: #ff0055;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.2rem;
+      box-shadow: 2px 2px 0 #000;
+      transition: background 0.3s;
     }
-    a:hover {
-      color: #fff;
+
+    .button-link:hover {
+      background: #ff3388;
     }
   </style>
 </head>
 <body>
-  <h1>🏀 DAO-Powered Sportsbook</h1>
-  <p>This page is under development. Check back soon for more info about <strong>🏀 DAO-Powered Sportsbook</strong>!</p>
-  <br><br>
-  <a href="index.html">🏠 Return to Home</a> |
-  <a href="project-map-1.html">🗺️ Back to Map</a>
+  <div class="container">
+    <h1>🏀 DAO Sportsbook</h1>
+
+    <div class="description">
+      <p>
+        Welcome to the DAO-Powered Sportsbook – a decentralized, gamified betting platform where ZAMN-style madness meets DeFi logic.
+        Players interact as pixelated avatars, placing bets on live sports, fantasy matchups, or even digital simulations — all governed by smart contracts, not shady bookies.
+      </p>
+      <p>
+        This project leverages Web3 tech, DAO governance, and crypto incentives to eliminate the house advantage and create a truly trustless betting ecosystem.
+        Think: if *Zeke* ran a sports betting ring in a haunted football stadium, this would be it.
+      </p>
+    </div>
+
+    <a class="button-link" href="https://example.com/sportsbook-whitepaper" target="_blank">📄 View White Paper</a>
+  </div>
 </body>
 </html>
